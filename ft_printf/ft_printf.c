@@ -30,6 +30,8 @@ static int	next_percent(const char *format, va_list args, int count, int i)
 		count = found_x(va_arg(args, unsigned int), count, 'A');
 	else if (format[i] == '%')
 		count = found_c('%', count);
+	else if (format[i])
+		count = found_c(format[i], count);
 	return (count);
 }
 
