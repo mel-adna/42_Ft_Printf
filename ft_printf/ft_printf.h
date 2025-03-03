@@ -17,7 +17,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
-# include <stdio.h>
 
 int	ft_printf(const char *format, ...);
 int	found_c(int c, int count);
